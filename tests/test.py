@@ -1,9 +1,7 @@
 from package.capitalize import capitalize
 
-if capitalize('hello') != 'Hello':
-    raise Exception('Dont work')
+assert capitalize('') == ''
 
-if capitalize('') != '':
-    raise Exception('Dont work')
+assert capitalize('hello') == 'Hello'
 
 print('Work')
